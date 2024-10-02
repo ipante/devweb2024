@@ -1,0 +1,55 @@
+p {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 20px;
+    margin : 20px;
+    animation: myAnim 10s ease 0s 1 normal forwards;
+}
+p::first-letter{
+    font-size: 2em;
+    color: rgb(255, 0, 0);
+    transform: rotateX(30deg) rotateY(20deg);transform-style: preserve-3d;
+}
+body {
+    color : rgb(24, 225, 101);
+    background-color: blue;
+    perspective: 115px;
+}
+h2 {
+    color: rgb(226, 16, 194);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blueviolet;
+}
+li {
+    display: inline;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+li:hover {
+    background-color: rgb(37, 126, 205);
+    color: rgb(0, 0, 0);
+}
+/* ajouter une classe pour spcéialiser des balises */
+.vert {
+    color: rgb(0, 255, 0);
+}
+/* ajouter une id pour spcéialiser un élément unique */
+#fond_rouge {
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+        margin-left: 100px;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+        margin-left: 20px;
+	}
+}
